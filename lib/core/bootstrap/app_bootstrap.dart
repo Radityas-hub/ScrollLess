@@ -2,6 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/widgets.dart';
 import 'package:hive_ce_flutter/hive_flutter.dart';
 import 'package:scrollless/core/models/limit_rule.dart';
+import 'package:scrollless/core/models/reminder_record.dart';
 import 'package:scrollless/core/models/violation.dart';
 import 'package:scrollless/core/services/notification_service.dart';
 import 'package:workmanager/workmanager.dart';
@@ -44,5 +45,11 @@ void _registerHiveAdapters() {
   }
   if (!Hive.isAdapterRegistered(1)) {
     Hive.registerAdapter(ViolationAdapter());
+  }
+  if (!Hive.isAdapterRegistered(2)) {
+    Hive.registerAdapter(ReminderRecordAdapter());
+  }
+  if (!Hive.isAdapterRegistered(3)) {
+    Hive.registerAdapter(ReminderOutcomeAdapter());
   }
 }

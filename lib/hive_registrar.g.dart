@@ -4,11 +4,14 @@
 
 import 'package:hive_ce/hive_ce.dart';
 import 'package:scrollless/core/models/limit_rule.dart';
+import 'package:scrollless/core/models/reminder_record.dart';
 import 'package:scrollless/core/models/violation.dart';
 
 extension HiveRegistrar on HiveInterface {
   void registerAdapters() {
     registerAdapter(LimitRuleAdapter());
+    registerAdapter(ReminderOutcomeAdapter());
+    registerAdapter(ReminderRecordAdapter());
     registerAdapter(ViolationAdapter());
   }
 }
@@ -16,6 +19,8 @@ extension HiveRegistrar on HiveInterface {
 extension IsolatedHiveRegistrar on IsolatedHiveInterface {
   void registerAdapters() {
     registerAdapter(LimitRuleAdapter());
+    registerAdapter(ReminderOutcomeAdapter());
+    registerAdapter(ReminderRecordAdapter());
     registerAdapter(ViolationAdapter());
   }
 }
