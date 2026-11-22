@@ -79,9 +79,6 @@ void main() {
     );
 
     final list = store.listDesc();
-    expect(
-      list.map((e) => e.id),
-      ['a:2026-11-22', 'a:2026-11-20'],
-    );
+    expect(list.map((e) => e.id), ['a:2026-11-22', 'a:2026-11-20']);
   });
 }
