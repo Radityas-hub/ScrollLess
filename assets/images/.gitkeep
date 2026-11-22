@@ -1,0 +1,7 @@
+# Folder shared untuk gambar maskot & ilustrasi (dipakai Dev 1, 2, 3).
+# Taruh file di sini, misal:
+#   assets/images/mascot_hi.png
+#   assets/images/mascot_wave.png
+#   assets/images/mascot_break.png
+# Nama file harus lowercase, tanpa spasi. File ini (.gitkeep) boleh dihapus
+# setelah ada png asli, fungsinya cuma agar folder ke-track git.

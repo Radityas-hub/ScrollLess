@@ -25,7 +25,7 @@ class _ReminderScreenState extends State<ReminderScreen> {
       children: [
         Text('Reminder', style: Theme.of(context).textTheme.headlineSmall),
         const SizedBox(height: 4),
-        const Text('Kelola notifikasi dan pemeriksaan batas di background.'),
+        const Text('Kelola notifikasi dan pemeriksaan batas di background. Testing'),
         const SizedBox(height: 20),
         SectionCard(
           title: 'Izin notifikasi',
